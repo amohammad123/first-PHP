@@ -21,3 +21,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/posts', 'App\Http\Controllers\PostController@index');
 
 Route::get('/posts/{id}', 'App\Http\Controllers\PostController@show');
+
+Route::put('/posts/{id}', 'App\Http\Controllers\PostController@update');
+
+Route::post('/posts', 'App\Http\Controllers\PostController@store');
+
+Route::delete('/posts', 'App\Http\Controllers\PostController@destroy');
+
+Route::post('register', 'App\Http\Controllers\AuthController@register');
+
+Route::post('login', 'App\Http\Controllers\AuthController@login');
+
+Route::post('logout', 'App\Http\Controllers\AuthController@logout');

@@ -1,2 +1,2 @@
 # mfpphp
-my first project with php and laravel
+my first project with laravel
